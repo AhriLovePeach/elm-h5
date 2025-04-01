@@ -13,7 +13,7 @@
     "type-check": "vue-tsc --build",
     "lint": "eslint . --fix",
     "format": "prettier --write src/",
-    "prepare": "husky",
+    "prepare": "husky && husky install",
     "commitlint": "commitlint --edit"
   },
   "dependencies": {
@@ -22,6 +22,8 @@
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
     "@playwright/test": "^1.51.0",
     "@tsconfig/node22": "^22.0.0",
     "@types/jsdom": "^21.1.7",
@@ -36,6 +38,7 @@
     "eslint": "^9.21.0",
     "eslint-plugin-playwright": "^2.2.0",
     "eslint-plugin-vue": "~10.0.0",
+    "husky": "^8.0.0",
     "jiti": "^2.4.2",
     "jsdom": "^26.0.0",
     "npm-run-all2": "^7.0.2",
