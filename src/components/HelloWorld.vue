@@ -5,7 +5,6 @@ defineProps<{
   msg: string
 
 }>()
-console.log('测试');
 
 </script>
 <template>
