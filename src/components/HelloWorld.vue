@@ -5,6 +5,7 @@ defineProps<{
   msg: string
 
 }>()
+console.log(312312);
 
 </script>
 
