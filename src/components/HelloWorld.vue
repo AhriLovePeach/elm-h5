@@ -5,9 +5,9 @@ defineProps<{
   msg: string
 
 }>()
+console.log('ttttt');
 
 </script>
-
 <template>
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
