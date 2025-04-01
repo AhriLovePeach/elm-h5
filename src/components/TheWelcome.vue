@@ -7,6 +7,8 @@ import CommunityIcon from './icons/IconCommunity.vue'
 import SupportIcon from './icons/IconSupport.vue'
 
 const openReadmeInEditor = () => fetch('/__open-in-editor?file=README.md')
+console.log('吃啥');
+
 </script>
 
 <template>
