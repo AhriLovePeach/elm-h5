@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { RouterView, useRoute, useRouter } from 'vue-router'
+// import { Tabbar, TabbarItem } from 'vant';
 import { ref, watch } from "vue";
 const route = useRoute()
 const router = useRouter()

@@ -7,6 +7,7 @@ const instance = axios.create({
 })
 // 添加响应拦截器
 instance.interceptors.response.use((response) => {
+  console.log('response', response)
   const { data: _data } = response
   const { code, data, msg } = _data
   if (code !== 0) {
