@@ -36,9 +36,12 @@ const onCancel = () => {
         <OpSearch v-model="searchValue" shape="round" show-action
             background="linear-gradient(90deg, rgb(41, 202, 255) 0%, rgb(0, 171, 245) 100%)" placeholder="大头冰糕买5赠2"
             @search="onSearch" @clear="onClear" @cancel="onCancel">
-            <!-- <template #right-icon>
-                <div>搜索</div>
-            </template> -->
+            <template>
+                <div>
+                    搜索
+                </div>
+            </template>
+            <van-button class="search-btn" size="small" type="default">搜索</van-button>
         </OpSearch>
 
         <div class="recommend-box">

@@ -8,7 +8,7 @@ fetchTest()
   <TabsView></TabsView>
 </template>
 
-<style scoped>
+<style>
 @import 'normalize.css';
 
 #app {
