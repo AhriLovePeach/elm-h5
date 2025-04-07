@@ -1,10 +1,24 @@
 <script setup lang="ts">
 import OpSearch from '@/components/OpSearch.vue';
 import type { ISeachRecommend } from '@/types'
+import { on } from 'events';
+import { ref } from 'vue';
 interface IProps {
     recommends: ISeachRecommend[]
 }
 defineProps<IProps>()
+const searchValue = ref('碧桂园1')
+const onSearch = (value?: string | number) => {
+    if (value !== undefined) {
+        console.log('onSearch', value);
+    }
+}
+const onClear = () => {
+    console.log('onClear');
+}
+const onCancel = () => {
+    console.log('onCancel');
+}
 </script>
 <template>
     <div class="home-top">
